@@ -23,7 +23,7 @@ public class Monedas {
 
                 String moneda1= MONEDA1.getSelectedItem().toString();
                 String moneda2= MONEDA2.getSelectedItem().toString();
-                double numero1=Double.parseDouble(textField1.getText());
+                
 
 
 
@@ -71,12 +71,86 @@ public class Monedas {
                     resultadoTxt.setText(" "+ resultado);
 
                 } else if (moneda1 == "COP" && moneda2=="JPY") {
-
-                    constante= 137.27;
+                    constante=0.031;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
 
                 } else if (moneda1 == "COP" && moneda2 == "VEF") {
+                    constante=129.734;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
 
-                    constante=5.39;
+                } else if (moneda1 == "EUR" && moneda2 == "EUR" ){
+                    constante=1;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+                } else if (moneda1 == "EUR" && moneda2=="USD" ) {
+                    constante=1.02;
+                    double resultado=Double.parseDouble(textField1.getText())/constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "EUR" && moneda2=="COP") {
+                    constante=4517.21;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "EUR" && moneda2=="JPY") {
+                    constante=139.26;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "EUR" && moneda2 == "VEF") {
+                    constante=582.008;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                }else if (moneda1 == "JPY" && moneda2 == "JPY" ){
+                    constante=1;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+                } else if (moneda1 == "JPY" && moneda2=="USD" ) {
+                    constante=0.0073;
+                    double resultado=Double.parseDouble(textField1.getText())/constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "JPY" && moneda2=="COP") {
+                    constante=32.43;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "JPY" && moneda2=="EUR") {
+                    constante=0.0072;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "JPY" && moneda2 == "VEF") {
+                    constante=4191.51;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "VEF" && moneda2 == "VEF" ){
+                    constante=1;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+                } else if (moneda1 == "VEF" && moneda2=="USD" ) {
+                    constante=0.00000174271;
+                    double resultado=Double.parseDouble(textField1.getText())/constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "VEF" && moneda2=="COP") {
+                    constante=0.00772439;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "VEF" && moneda2=="EUR") {
+                    constante=0.00000172137;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
+
+                } else if (moneda1 == "VEF" && moneda2 == "JPY") {
+                    constante=0.000239163;
+                    double resultado=Double.parseDouble(textField1.getText())*constante;
+                    resultadoTxt.setText(" "+ resultado);
 
                 }
 
